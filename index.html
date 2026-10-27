@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="js/theme.js"></script>
+  <title>Grand Line Card Vault - One Piece Card Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="top">
+  <div class="demo-notice" role="status"><b>BẢN DEMO TĨNH</b><span>Ảnh box/thẻ là tư liệu tham khảo; đơn hàng và thanh toán được mô phỏng, không phát sinh giao dịch thật.</span></div>
+  <div class="announce">GIAO DIỆN GIỚI THIỆU SẢN PHẨM · GIÁ CẢ VÀ CHÍNH SÁCH CHỈ MANG TÍNH MINH HỌA</div>
+
+  <header class="header">
+    <div class="container header-row">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Mở menu">☰</button>
+      <a class="logo" href="#top" aria-label="Grand Line Card Vault - Trang chủ"><span class="logo-mark">⚓</span><span><b>GRAND LINE</b><small>CARD VAULT</small></span></a>
+      <div class="search">
+        <input id="searchInput" type="search" placeholder="Tìm tên, mã OP-01, SEC hoặc giá&lt;500k..." autocomplete="off" aria-label="Tìm theo tên, mã thẻ, độ hiếm hoặc giá" />
+        <div class="suggest" id="suggest"></div>
+      </div>
+      <div class="actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Đổi giao diện">☀</button>
+        <a class="icon-btn" href="pages/account.html" aria-label="Tài khoản" title="Tài khoản" style="display:grid;place-items:center">👤</a>
+        <a class="icon-btn cart-btn" href="pages/cart.html" aria-label="Giỏ hàng" style="display:grid;place-items:center">🛍<span id="cartCount">0</span></a>
+      </div>
+    </div>
+    <nav class="container nav" id="nav" aria-label="Điều hướng chính"><a href="#top" aria-current="page">Trang chủ</a><a href="pages/catalog.html">Thẻ đơn</a><a href="pages/set.html">Set mới</a><a href="pages/tracker.html#shop">Box · Pack · Thẻ</a><a href="pages/guide.html">Cẩm nang</a><a class="sale-link" href="#hot">✦ Flash Sale</a>
+    </nav>
+  </header>
+
+  <section class="container hero-wrap">
+    <div class="hero">
+      <div class="hero-text">
+        <span class="badge" id="heroBadge">NEW RELEASE · OP-09</span>
+        <p class="kicker" id="heroKicker">THE FOUR EMPERORS</p>
+        <h1 id="heroTitle">CHINH PHỤC<br /><em>ĐẠI HẢI TRÌNH</em></h1>
+        <p class="lead" id="heroDesc">Khám phá Booster Pack OP-09 cùng những lá SEC và Parallel Rare đáng săn đón nhất mùa này.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="pages/set.html">Khám phá ngay →</a><a class="btn btn-ghost" href="pages/catalog.html">Xem danh sách thẻ</a></div>
+        <div class="dots" id="heroDots"></div>
+      </div>
+      <div class="hero-visual" id="heroVisual">
+        <div class="box box-back"></div>
+        <div class="box box-main"><small>ONE PIECE CARD GAME</small><strong id="boxName">THE FOUR<br />EMPERORS</strong><span id="boxCode">OP-09</span></div>
+        <div class="hero-card"><img src="assets/card-art/one-piece/op09-119-luffy.png" alt="Ảnh tham khảo thẻ One Piece OP09-119"><b>OP09-119 · SEC</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container featured-showcase" aria-labelledby="featuredTitle">
+    <div class="featured-heading">
+      <div><p class="eyebrow">CURRENT COLLECTION · OP-09</p><h2 id="featuredTitle">Box &amp; thẻ nổi bật</h2></div>
+      <span class="featured-demo-tag">ẢNH THAM KHẢO</span>
+    </div>
+    <div class="featured-grid">
+      <article class="featured-item featured-box">
+        <div class="featured-copy">
+          <span class="featured-kicker">BOOSTER BOX · OP-09</span>
+          <h3>The Four Emperors</h3>
+          <p>Ảnh tham khảo Booster Box OP-09 trong bộ sưu tập hiện tại.</p>
+          <a class="btn btn-primary" href="pages/set.html">Xem set OP-09 <span aria-hidden="true">→</span></a>
+        </div>
+        <img src="assets/box/op09-booster-box.png" alt="Ảnh tham khảo Booster Box OP-09" loading="lazy">
+      </article>
+      <article class="featured-item featured-card">
+        <div class="featured-copy">
+          <span class="featured-kicker">SINGLE CARD · SEC</span>
+          <h3>Monkey D. Luffy</h3>
+          <p>OP09-119 · ảnh thẻ tham khảo cho bản demo.</p>
+          <a class="btn btn-primary" href="pages/product.html?id=1">Xem thẻ demo <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="featured-card-art">
+          <img src="assets/card-art/one-piece/op09-119-luffy.png" alt="Ảnh tham khảo thẻ One Piece OP09-119" loading="lazy">
+          <span>SEC · OP09-119</span>
+        </div>
+      </article>
+    </div>
+    <p class="featured-disclaimer">Ảnh tham khảo do người dùng cung cấp; vui lòng xác minh phiên bản, ngôn ngữ và tình trạng trước khi sử dụng thực tế.</p>
+  </section>
+
+  <section class="container perks">
+    <div><span>🛡</span><b>Chính hãng 100%</b><small>Nguồn gốc minh bạch</small></div>
+    <div><span>✔</span><b>Kiểm định tình trạng</b><small>Phân loại NM / LP</small></div>
+    <div><span>📦</span><b>Đóng gói an toàn</b><small>Sleeve và top loader</small></div>
+    <div><span>📈</span><b>Theo dõi giá trị</b><small>Cập nhật mỗi ngày</small></div>
+  </section>
+
+  <section class="container section" id="hot">
+    <div class="heading"><div><p class="eyebrow">TREASURE OF THE DAY</p><h2>Thẻ hot đang được săn đón</h2></div><div class="timer">KẾT THÚC SAU <b id="countdown">00:00:00</b></div></div>
+    <div class="grid cards" id="hotGrid"></div>
+  </section>
+
+  <section class="container section" id="products">
+    <div class="heading"><div><p class="eyebrow">CHOOSE YOUR VOYAGE</p><h2>Khám phá kho thẻ</h2></div></div>
+    <div class="categories">
+      <a class="cat c1" href="pages/tracker.html?kind=booster#shop"><span>01</span><h3>Booster Boxes &amp; Packs</h3><p>Mở khóa những kho báu mới</p></a>
+      <a class="cat c2" href="pages/catalog.html"><span>02</span><h3>Single Cards</h3><p>Hoàn thiện bộ bài của bạn</p></a>
+      <a class="cat c3" href="pages/tracker.html?kind=starter#shop"><span>03</span><h3>Starter Decks</h3><p>Sẵn sàng nhập cuộc</p></a>
+      <a class="cat c4" href="pages/tracker.html?kind=accessory#shop"><span>04</span><h3>Accessories</h3><p>Sleeves, Binder, Playmat</p></a>
+    </div>
+  </section>
+
+  <section class="container section" id="singles">
+    <div class="heading"><div><p class="eyebrow">BUILD YOUR DECK</p><h2>Bộ lọc thẻ nâng cao</h2></div><span class="result"><span id="resultCount"></span> · <a href="pages/catalog.html" style="color:var(--ocean)">Bộ lọc đầy đủ →</a></span></div>
+    <div class="colors" id="colorFilters"></div>
+    <div class="filters">
+      <select id="rarityFilter"><option value="">Độ hiếm</option><option>SEC</option><option>SR</option><option>R</option><option>PARALLEL</option><option>MANGA</option></select>
+      <select id="costFilter"><option value="">Cost</option><option value="le5">≤ 5</option><option value="gt5">&gt; 5</option></select>
+      <select id="powerFilter"><option value="">Power</option><option value="5000">≥ 5.000</option><option value="7000">≥ 7.000</option><option value="9000">≥ 9.000</option></select>
+      <select id="counterFilter"><option value="">Counter</option><option value="0">0</option><option value="1000">+1000</option><option value="2000">+2000</option></select>
+      <select id="attrFilter"><option value="">Attribute</option><option value="Slash">Slash</option><option value="Strike">Strike</option><option value="Special">Special</option></select>
+      <select id="priceFilter"><option value="">Khoảng giá</option><option value="2">Dưới 2 triệu</option><option value="5">2 – 5 triệu</option><option value="99">Trên 5 triệu</option></select>
+      <select id="sortFilter"><option value="">Sắp xếp</option><option value="asc">Giá tăng dần</option><option value="desc">Giá giảm dần</option></select>
+      <label class="check"><input type="checkbox" id="stockFilter" /> Còn hàng</label>
+      <button class="btn btn-primary" id="resetBtn">Xóa lọc</button>
+    </div>
+    <div class="grid cards" id="singleGrid"></div>
+    <p class="empty" id="empty" hidden>Không tìm thấy thẻ phù hợp.</p>
+  </section>
+
+  <section class="container section" id="tracker">
+    <div class="tracker">
+      <div>
+        <p class="eyebrow cyan">MARKET INSIGHTS</p>
+        <h2>Biết giá trị<br />kho báu của bạn</h2>
+        <p class="muted-light">Theo dõi biến động giá thẻ hiếm. Giá chỉ mang tính tham khảo.</p>
+        <select id="trackerCard"></select>
+        <a class="btn btn-ghost" href="pages/tracker.html" style="margin:12px 0 0 0;height:40px">Mở Price Tracker đầy đủ →</a><div class="range" id="rangeBtns"><button data-d="7">7D</button><button data-d="30" class="on">30D</button><button data-d="90">90D</button></div>
+      </div>
+      <div class="chart-box">
+        <div class="chart-head"><div><small id="tCode"></small><b id="tName"></b></div><div class="right"><b id="tPrice"></b><small id="tChange"></small></div></div>
+        <svg id="chart" viewBox="0 0 500 200" preserveAspectRatio="none"></svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section" id="guide">
+    <div class="heading"><div><p class="eyebrow">CẨM NANG TCG</p><h2>Mua thẻ an tâm</h2></div></div>
+    <div class="guides">
+      <a href="pages/guide.html#that-gia"><article><h3>Phân biệt thẻ thật / giả</h3><p>Kiểm tra lớp lõi, độ sắc nét in ấn và mã thẻ.</p></article></a>
+      <a href="pages/guide.html"><article><h3>Tiêu chuẩn NM / LP / MP</h3><p>Hiểu rõ tình trạng thẻ trước khi mua.</p></article></a>
+      <a href="pages/guide.html"><article><h3>Bảo quản thẻ hiếm</h3><p>Sleeve, top loader và binder đúng cách.</p></article></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div><div class="logo"><span class="logo-mark">⚓</span><b>GRAND LINE</b></div><p class="muted">Website giới thiệu sản phẩm TCG bản demo.</p></div>
+      <div><b>Sản phẩm</b><a href="pages/tracker.html?kind=booster#shop">Booster Box &amp; Pack</a><a href="pages/catalog.html">Single Cards</a><a href="pages/set.html">Set mới OP-09</a><a href="pages/tracker.html?kind=starter#shop">Starter Deck</a><a href="pages/tracker.html?kind=accessory#shop">Phụ kiện</a></div>
+      <div><b>Thông tin tham khảo</b><p class="muted">Sản phẩm, giá và chính sách trên website chỉ nhằm minh họa giao diện.</p><a href="pages/guide.html#giao-hang">Giao hàng</a><a href="pages/guide.html#doi-tra">Đổi trả</a><a href="pages/guide.html#that-gia">Hướng dẫn phân biệt thẻ thật / giả</a></div>
+      <div><b>Khám phá &amp; cộng đồng</b><a href="mailto:anhhao03102007@gmail.com">Liên hệ: anhhao03102007@gmail.com</a><a href="pages/tracker.html#market">Bảng giá thị trường</a><a href="pages/guide.html">Cẩm nang TCG</a><a href="pages/guide.html#community">Cộng đồng TCG</a></div>
+    </div>
+    <div class="container copy">© 2026 Grand Line Card Vault</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/home.js"></script>
+</body>
+</html>

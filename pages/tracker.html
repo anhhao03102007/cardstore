@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi" data-theme="dark"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><script src="../js/theme.js"></script>
+<title>Gian hàng One Piece Card Game - Grand Line Card Vault</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" /><link rel="stylesheet" href="../css/pages.css" /></head>
+<body>
+<div id="site-header"></div>
+<main class="container">
+  <p class="crumbs"><a href="../index.html">Trang chủ</a> / Mua sắm</p>
+  <section id="shop" class="shop-section">
+    <div class="page-head"><p class="eyebrow" id="shopEyebrow">CHỌN CÁCH SƯU TẦM CỦA BẠN</p><h1 id="shopTitle">Kho báu One Piece Card Game</h1>
+      <p class="shop-lead" id="shopLead">Khám phá box, pack, starter deck, phụ kiện và thẻ đơn trong danh mục mẫu. Thao tác giỏ hàng và đặt hàng chỉ mô phỏng.</p></div>
+    <div class="shop-perks">
+      <div><span>📦</span><b>Booster Box</b><small>Sản phẩm minh họa</small></div>
+      <div><span>🎴</span><b>Pack lẻ</b><small>Danh mục demo</small></div>
+      <div><span>✨</span><b>Thẻ đơn</b><small>Săn đúng lá cần tìm</small></div>
+    </div>
+    <div class="shop-panel panel">
+      <div class="shop-toolbar">
+        <div class="shop-tabs" id="shopTabs" role="group" aria-label="Loại sản phẩm">
+          <button class="on" data-kind="all">Tất cả</button><button data-kind="booster">Box &amp; Pack</button><button data-kind="box">Box</button><button data-kind="pack">Pack</button><button data-kind="card">Thẻ đơn</button><button data-kind="starter">Starter Deck</button><button data-kind="accessory">Phụ kiện</button>
+        </div>
+        <div class="shop-controls">
+          <label class="shop-search"><span>⌕</span><input id="shopSearch" type="search" placeholder="Tìm tên, mã bộ thẻ..." aria-label="Tìm sản phẩm" /></label>
+          <select id="shopSort" aria-label="Sắp xếp sản phẩm"><option value="featured">Nổi bật</option><option value="asc">Giá thấp đến cao</option><option value="desc">Giá cao đến thấp</option></select>
+        </div>
+      </div>
+      <div class="shop-result"><b id="shopCount"></b><span>Chọn số lượng trước khi thêm vào giỏ</span></div>
+      <div class="grid cards shop-grid" id="shopGrid"></div>
+      <p class="empty" id="shopEmpty" hidden>Không tìm thấy sản phẩm phù hợp. Hãy thử từ khóa khác.</p>
+    </div>
+  </section>
+
+  <section id="market" class="market-section">
+    <div class="page-head"><p class="eyebrow">MARKET INSIGHTS</p><h2>Theo dõi giá thẻ</h2><p class="market-lead">Tham khảo biến động giá trước khi chọn lá bài tiếp theo.</p></div>
+    <div class="panel">
+      <div class="toolbar"><input id="tq" type="search" placeholder="Tìm thẻ hoặc mã OP05-119..." aria-label="Tìm thẻ theo dõi giá" />
+        <div class="range" id="range" style="margin:0"><button data-d="7">7D</button><button data-d="30" class="on">30D</button><button data-d="90">90D</button><button data-d="365">1Y</button></div></div>
+      <div class="chart-head"><div><small id="tCode"></small><br><b id="tName" style="font-size:20px"></b></div><div class="right"><b id="tPrice"></b><small id="tChange"></small></div></div>
+      <svg id="chart" viewBox="0 0 500 200" preserveAspectRatio="none"></svg>
+      <div class="stats" style="margin:18px 0 0"><div><small>THẤP NHẤT</small><b id="sMin"></b></div><div><small>CAO NHẤT</small><b id="sMax"></b></div><div><small>TRUNG BÌNH</small><b id="sAvg"></b></div><div><small>CẬP NHẬT</small><b>Hôm nay</b></div></div>
+      <a id="tLink" class="btn btn-outline" style="margin-top:16px">Xem sản phẩm →</a>
+    </div>
+    <h2 class="market-table-title">Bảng giá thị trường</h2>
+    <div class="panel market-table"><table><thead><tr><th>THẺ</th><th>RARITY</th><th>GIÁ</th><th>30 NGÀY</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+  </section>
+  <div style="height:40px"></div>
+</main>
+<div id="site-footer"></div>
+<script src="../js/common.js"></script>
+<script src="../js/pages/tracker.js"></script>
+</body></html>

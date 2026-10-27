@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi" data-theme="dark"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><script src="../js/theme.js"></script>
+<title>Single Cards - Grand Line Card Vault</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" /><link rel="stylesheet" href="../css/pages.css" /></head>
+<body>
+<div id="site-header"></div>
+<main class="container">
+  <p class="crumbs"><a href="../index.html">Trang chủ</a> / Single Cards</p>
+  <div class="page-head"><p class="eyebrow">BUILD YOUR DECK</p><h1>Single Cards</h1></div>
+  <div class="layout">
+    <aside class="side" id="side">
+      <div style="display:flex;justify-content:space-between;align-items:center"><b>BỘ LỌC</b><button class="chip" id="closeSide">Đóng ✕</button></div>
+      <div><h4>BỘ THẺ</h4><div class="opts" data-f="set"></div></div>
+      <div><h4>MÀU</h4><div class="opts" data-f="color"></div></div>
+      <div><h4>ĐỘ HIẾM</h4><div class="opts" data-f="rarity"></div></div>
+      <div><h4>LOẠI THẺ</h4><div class="opts" data-f="type"></div></div>
+      <div><h4>ATTRIBUTE</h4><div class="opts" data-f="attr"></div></div>
+      <div><h4>COST ≤ <span id="costV">10</span></h4><input type="range" id="cost" min="0" max="10" value="10" /></div>
+      <div><h4>POWER ≥ <span id="powV">0</span></h4><input type="range" id="pow" min="0" max="12000" step="1000" value="0" /></div>
+      <div><h4>COUNTER</h4><div class="opts" data-f="counter"></div></div>
+      <div><h4>GIÁ TỐI ĐA: <span id="priceV"></span></h4><input type="range" id="price" min="100000" max="9000000" step="100000" value="9000000" /></div>
+      <label class="check"><input type="checkbox" id="stock" /> Chỉ hiện còn hàng</label>
+      <button class="btn btn-primary" id="reset">Xóa tất cả</button>
+    </aside>
+    <section>
+      <div class="toolbar"><button class="btn btn-primary filter-toggle" id="openSide">⚙ Bộ lọc</button><b id="count"></b>
+        <select id="sort"><option value="">Mới nhất</option><option value="asc">Giá tăng dần</option><option value="desc">Giá giảm dần</option><option value="power">Power cao nhất</option></select></div>
+      <div class="tags" id="tags"></div>
+      <div class="grid cards" id="grid"></div>
+      <p class="empty" id="empty" hidden>Không có thẻ phù hợp. Hãy thử nới lỏng bộ lọc.</p>
+      <div class="pager" id="pager"></div>
+    </section>
+  </div>
+  <div style="height:40px"></div>
+</main>
+<div id="site-footer"></div>
+<script src="../js/common.js"></script>
+<script src="../js/pages/catalog.js"></script>
+</body></html>
